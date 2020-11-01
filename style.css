@@ -1,5 +1,5 @@
 /*!
-Theme Name: Seventh Art 2020
+Theme Name: Seventh Art 2020 Theme
 Theme URI: http://underscores.me/
 Author: BenjaminTheDev
 Author URI: https://benjaminthedev.github.io/
@@ -647,10 +647,10 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
-.main-navigation {
+/* .main-navigation {
 	display: block;
 	width: 100%;
-}
+} */
 
 .main-navigation ul {
 	display: none;
@@ -967,3 +967,171 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+
+/*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header#masthead {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    overflow: hidden;
+    height: 120px;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-branding{
+	width: 10%;
+	margin-top: 10px;
+
+}
+
+.site-title,
+.site-description{
+	display: none;
+}
+
+ul#primary-menu{
+	margin-top: 36px;
+}
+
+ul#primary-menu li{	
+	margin: 10px;
+}
+
+ul#primary-menu li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 19px;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+
+
+.slider {
+  /* position: relative; */
+  position: inherit;
+  overflow: hidden;
+  height: 100vh;
+  width: 99vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Slider Images */
+ 
+/* .slide:first-child {
+  background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat
+    center top/cover;
+} */
+/* .slide:nth-child(2) {
+  background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
+    center center/cover;
+} */

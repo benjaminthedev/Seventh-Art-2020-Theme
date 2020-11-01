@@ -26,6 +26,8 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'seventhart' ); ?></a>
 
 	<header id="masthead" class="site-header">
+
+	<div class="header__wrap">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -56,4 +58,6 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+		</div><!-- end header__wrap -->
 	</header><!-- #masthead -->
