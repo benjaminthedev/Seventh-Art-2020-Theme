@@ -23,10 +23,13 @@ get_header();
      <div class="slider">
         <div class="slide current" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
-            <div class="content">
+            <div class="content">          
+                <div class="slider__text">
+                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
+                </div>            
               
                 <div class="slider__info">
-                 Download / Stream / DVD
+                     Download / Stream / DVD
                 </div>
             
                 <div class="woocommerce__message">
@@ -38,6 +41,10 @@ get_header();
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
+                <div class="slider__text">
+                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
+                </div>
+
                 <div class="slider__info">
                  Download / Stream / DVD
                 </div>
@@ -50,6 +57,10 @@ get_header();
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
+                <div class="slider__text">
+                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
+                </div>
+
                  <div class="slider__info">
                  Download / Stream / DVD
                 </div>
@@ -62,6 +73,10 @@ get_header();
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
+                <div class="slider__text">
+                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
+                </div>
+
                 <div class="slider__info">
                  Download / Stream / DVD
                 </div>
@@ -74,6 +89,10 @@ get_header();
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
+                <div class="slider__text">
+                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
+                </div>
+
                 <div class="slider__info">
                  Download / Stream / DVD
                 </div>
@@ -86,6 +105,11 @@ get_header();
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
+                <div class="slider__text">
+                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
+                </div>            
+
+
                 <div class="slider__info">
                 <p>Download / Stream / DVD</p> 
                 </div>
