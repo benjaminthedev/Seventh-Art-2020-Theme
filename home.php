@@ -24,61 +24,75 @@ get_header();
         <div class="slide current" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
-                <h1>Slide One</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+              
+                <div class="slider__info">
+                 Download / Stream / DVD
+                </div>
+            
+                <div class="woocommerce__message">
+                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                </div>
+            </div>
+        
+        </div>
+        <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
+    center center/cover">
+            <div class="content">
+                <div class="slider__info">
+                 Download / Stream / DVD
+                </div>
+            
+                <div class="woocommerce__message">
+                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                </div>
             </div>
         </div>
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
-                <h1>Slide Two</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+                 <div class="slider__info">
+                 Download / Stream / DVD
+                </div>
+            
+                <div class="woocommerce__message">
+                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                </div>
             </div>
         </div>
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
-                <h1>Slide Three</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+                <div class="slider__info">
+                 Download / Stream / DVD
+                </div>
+            
+                <div class="woocommerce__message">
+                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                </div>
             </div>
         </div>
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
-                <h1>Slide Four</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+                <div class="slider__info">
+                 Download / Stream / DVD
+                </div>
+            
+                <div class="woocommerce__message">
+                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                </div>
             </div>
         </div>
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
-                <h1>Slide Five</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
-            </div>
-        </div>
-        <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
-    center center/cover">
-            <div class="content">
-                <h1>Slide Six</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-                    maxime, voluptatibus labore doloremque vero!
-                </p>
+                <div class="slider__info">
+                <p>Download / Stream / DVD</p> 
+                </div>
+            
+                <div class="woocommerce__message">
+                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                </div>
             </div>
         </div>
     </div>
@@ -90,8 +104,10 @@ get_header();
 
 
 
+
+
 <br />
-<h1>this is the banner home page</h1>
+
 </div>
 
 

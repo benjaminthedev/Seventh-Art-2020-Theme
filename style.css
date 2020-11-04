@@ -1036,7 +1036,7 @@ ul#primary-menu li a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 64%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   /* background-size: contain;
@@ -1049,13 +1049,13 @@ ul#primary-menu li a {
 
 .slide .content {
   position: absolute;
-  bottom: 70px;
-  left: -600px;
+  bottom: 0px;
+  /* left: -600px; */
   opacity: 0;
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.8); */
   color: #333;
-  padding: 35px;
+  
 }
 
 .slide .content h1 {
@@ -1064,25 +1064,25 @@ ul#primary-menu li a {
 
 .slide.current .content {
   opacity: 1;
-  transform: translateX(600px);
-  transition: all 0.7s ease-in-out 0.3s;
+  /* transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s; */
 }
 
 .buttons button#next {
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 15px;
 }
 
 .buttons button {
-  border: 2px solid #fff;
-  background-color: transparent;
+  /* border: 2px solid #fff; */
+  /* background-color: transparent; */
   color: #fff;
   cursor: pointer;
   padding: 13px 15px;
@@ -1091,7 +1091,7 @@ ul#primary-menu li a {
 }
 
 .buttons button:hover {
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #333;
 }
 
@@ -1135,3 +1135,35 @@ ul#primary-menu li a {
   background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
     center center/cover;
 } */
+
+
+
+/*--------------------------------------------------------------
+# WooCommerce Message Under The Slider
+--------------------------------------------------------------*/
+.slider__info {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 3px solid #c68e01;
+    text-align: center;
+    padding: 10px 5px;
+	width: 20vw;
+    margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+# WooCommerce Message Under The Slider
+--------------------------------------------------------------*/
+.woocommerce__message h4{
+	background-color: #C58E02;
+	text-align: center;
+	margin: 0px;
+	color: #fff;
+	font-size:20px; 
+	padding: 10px 0;
+}
+
+
+
