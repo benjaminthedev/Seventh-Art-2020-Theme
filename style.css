@@ -1175,4 +1175,197 @@ ul#primary-menu li a {
 }
 
 
+/* -- Home page product cats -- */
 
+ul.woocommerce-products-cats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+ul.woocommerce-products-cats li {
+    list-style-type: none;
+	width: 26vw;
+	margin-bottom: 50px;
+}
+
+.title-container  {
+    text-align: center;
+}
+
+.title-container a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* WooCommerce Archieve Page */
+
+/*.exhibition-on-screen-2{
+background:green;}  */
+
+
+.exhibition-on-screen-2 .woocommerce ul.products li.product,
+.exhibition-on-screen-2 .woocommerce-page ul.products li.product {
+    float: left;
+    padding: 0;
+    position: relative;
+    width: 23%;
+    margin: 0 33px 10px 0;
+    min-height: 300px;
+}
+.exhibition-on-screen-2 li.product.type-product.last {
+    margin: 0 !important;
+}
+.exhibition-on-screen-2 .woocommerce ul.products li.product .last,
+.exhibition-on-screen-2 .woocommerce-page ul.products li.product .last {
+    background: green !important;
+}
+.exhibition-on-screen-2 ul.products .woocommerce-loop-product__title {
+    padding: 0 !important;
+    margin: 0 !important;
+    text-transform: uppercase;
+}
+.exhibition-on-screen-2 .woocommerce .woocommerce-ordering,
+.exhibition-on-screen-2 .woocommerce-page .woocommerce-ordering {
+    display: block;
+}
+.exhibition-on-screen-2 .berocket_better_labels span {
+    margin-top: 9.04em !important;
+}
+.exhibition-on-screen-2 h2.woocommerce-loop-product__title {
+    font-family: Teko, sans-serif !important;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+.exhibition-on-screen-2 .woocommerce a.news-read-more {
+    display: none;
+}
+.exhibition-on-screen-2 .woocommerce a.btn.btn-secondary.understrap-read-more-link {
+    display: none;
+}
+.exhibition-on-screen-2 .woocommerce ul.products li.product a,
+.exhibition-on-screen-2 ul.products.columns-4 li p {
+    text-transform: unset !important;
+    font-size: 16px;
+}
+.exhibition-on-screen-2 .woo_mediaType__pricesFrom__wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.exhibition-on-screen-2 .woo__mediaType {
+    color: #ff9000;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+    .woocommerce ul.products[class*="columns-"] li.product,
+    .woocommerce-page ul.products[class*="columns-"] li.product {
+        width: 90%;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .woocommerce ul.products[class*="columns-"] li.product:nth-child(2n),
+    .woocommerce-page ul.products[class*="columns-"] li.product:nth-child(2n) {
+        float: none;
+        clear: none !important;
+    }
+    .berocket_better_labels .berocket_better_labels_line .br_alabel {
+        display: inline-block;
+        position: relative;
+        top: 10px !important;
+        left: 20px !important;
+        right: 0 !important;
+        line-height: 1px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .woocommerce ul.products[class*="columns-"] li.product,
+    .woocommerce-page ul.products[class*="columns-"] li.product {
+        width: 90%;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .woocommerce ul.products[class*="columns-"] li.product:nth-child(2n),
+    .woocommerce-page ul.products[class*="columns-"] li.product:nth-child(2n) {
+        float: none;
+        clear: none !important;
+    }
+    .berocket_better_labels .berocket_better_labels_line .br_alabel {
+        display: inline-block;
+        position: relative;
+        top: 10px !important;
+        left: 20px !important;
+        right: 0 !important;
+        line-height: 1px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 22%;
+    }
+    .berocket_better_labels span {
+        margin-top: 5.69em !important;
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    body {
+        background: green !important;
+    }
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 22%;
+    }
+    .berocket_better_labels span {
+        margin-top: 5.69em !important;
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    body {
+        background: #00f !important;
+    }
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 22%;
+    }
+    .berocket_better_labels span {
+        margin-top: 8.48em !important;
+    }
+}
+
+.exhibition-on-screen-2 ul.products .woocommerce-loop-product__title {
+    font-size: 1.8em!important;
+}
+
+
+ul.products .woocommerce-loop-product__title{
+      font-size: 1em!important;
+}
+
+
+/*fixes the issues with the upsells*/
+
+.single .woo__excerpt a p {
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+}
+
+.single .upsells .woocommerce-loop-product__title{
+	padding: 0px!important;
+}
+
+.single .woo_mediaType__pricesFrom__wrapper {
+    display: none;
+}
