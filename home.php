@@ -111,7 +111,7 @@ get_header();
 
 
                 <div class="slider__info">
-                <p>Download / Stream / DVD</p> 
+                    Download / Stream / DVD
                 </div>
             
                 <div class="woocommerce__message">
@@ -126,22 +126,64 @@ get_header();
     </div>
 </div>
 
-
-
-
-
 <br />
+
+<?php the_field('home_view_text');?>
+
 
 </div>
 
 
+<?php if( have_rows('woocommerce_category_boxes') ):?>
+						<ul class="woocommerce-products-cats">
+								<?php // loop through the rows of data
+									while ( have_rows('woocommerce_category_boxes') ) : the_row();
+									
+											// vars
+											$image = get_sub_field('image');
+											$title = get_sub_field('title');
+											$link = get_sub_field('link');
+											
+									
+									?>
+								<li class="increment">											
+								
+										<div id="woo-cat-image">
+
+                                        <img src="<?php echo $image; ?>" alt="Seventh Art Product Categories">
+							
+											<div class="title-container">
+													<?php if( $link ): ?>
+														<a href="<?php echo $link; ?>">
+													<?php endif; ?>	
+
+															<?php echo $title; ?>
+
+													<?php if( $link ): ?>
+													</a>
+												<?php endif; ?>
+
+											</div>
+										</div>
+									
+									
+
+					
+								</li>
+								<?php
+									endwhile;
+									else :
+									// no rows found?>
+					</ul>
+				<?php endif;?>	
+									
+				
+					
+				</main><!-- #main -->
+			</div><!-- #primary -->
+		</div><!-- .row end -->
 
 
-
-
-
-
-<h1>This is the home page</h1>
 
 <?php
 get_footer();
