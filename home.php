@@ -139,12 +139,11 @@ get_header();
 								<?php // loop through the rows of data
 									while ( have_rows('woocommerce_category_boxes') ) : the_row();
 									
-											// vars
+
 											$image = get_sub_field('image');
 											$title = get_sub_field('title');
 											$link = get_sub_field('link');
 											
-									
 									?>
 								<li class="increment">											
 								
