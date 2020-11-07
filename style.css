@@ -1143,6 +1143,26 @@ ul#primary-menu li a {
     margin: 0 auto;
 }
 
+/* -- Slider Text if no image text --  */
+
+.text__content * {
+    color: #fff;
+    text-align: center;
+}
+
+.text__content {
+    top: -40px;
+    position: relative;
+}
+
+.text__content h3 {
+    font-size: 70px;
+	margin: 0;
+	line-height: 66px;
+}
+
+
+
 
 /* -- Home page product cats -- */
 
