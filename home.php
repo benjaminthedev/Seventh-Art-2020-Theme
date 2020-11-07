@@ -41,16 +41,24 @@ get_header();
         <div class="slide" style="background: url(https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/Header_freud.jpg) no-repeat
     center center/cover">
             <div class="content">
-                <div class="slider__text">
-                    <img src="https://wordpress-293167-1568393.cloudwaysapps.com/wp-content/uploads/2020/11/type_freud.png" alt="Slider Text Test">
-                </div>
+                
+                <!-- <div class="slider__text">
+                </div> -->
+
+                    <div class="text__content">
+                        <h3>Tim Marlow With</h3>
+                        <h3>Gilber & George</h3>
+                    </div>
+
+
+                
 
                 <div class="slider__info">
-                 Download / Stream / DVD
+                 Available On DVD
                 </div>
             
                 <div class="woocommerce__message">
-                    <h4>SPECIAL MUSIC OFFER - Buy on DVD and receive Ronald Brautigam's PIANO NOTES DVD free</h4>
+                    <h4>DVD NOW HALF PRICE - Now only £6.50 (RRP £12.99)</h4>
                 </div>
             </div>
         </div>
