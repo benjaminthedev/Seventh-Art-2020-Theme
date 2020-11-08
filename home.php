@@ -133,12 +133,12 @@ get_header();
         <button id="next">&gt;</button>
     </div>
 </div>
+    <div class="welcome__text">
+        <p>
+            <?php the_field('home_view_text');?>
+        </p>
+    </div>
 
-<br />
-
-    <p class="welcome__text">
-        <?php the_field('home_view_text');?>
-    </p>
 </div>
 
 
