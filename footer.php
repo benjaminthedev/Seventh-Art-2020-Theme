@@ -11,20 +11,22 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'seventhart' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'seventhart' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'seventhart' ), 'seventhart', '<a href="https://benjaminthedev.github.io/">BenjaminTheDev</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer class="footer__main">
+		
+		<div class="footer__nav">
+			<ul>
+				<li><a href="">Contact Us</a></li>	
+				<li><a href="">Exhibition On Screen</a></li>	
+				<li><a href="">FAQs</a></li>	
+				<li><a href="">Privacy</a></li>	
+			</ul>
+		</div>
+
+		<div class="footer__address">
+			<p>Seventh Art Productions, 63 Ship Street, Brighton, BN1 1AE, UK</p>
+			<p>Telephone: +44 (01273) 777 678</p>
+			<p>info@seventh-art.com</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
