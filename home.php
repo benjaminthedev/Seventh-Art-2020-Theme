@@ -136,9 +136,9 @@ get_header();
 
 <br />
 
-<?php the_field('home_view_text');?>
-
-
+    <p class="welcome__text">
+        <?php the_field('home_view_text');?>
+    </p>
 </div>
 
 

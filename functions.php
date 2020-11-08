@@ -184,3 +184,55 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+//Just show grouped products - do this when you have all products grouped
+
+add_filter( 'woocommerce_product_query_tax_query', 'only_grouped_products', 20, 1 );
+function only_grouped_products( $tax_query ){
+
+	if (is_product_category(array( 311, 47, 50, 53))) {
+		
+		$tax_query[] = array(
+        'taxonomy'  => 'product_type',
+        'field'     => 'name',
+        'terms'     => array('grouped'),
+    );
+	return $tax_query;
+
+	}	
+}
+
+//Removes popularity & 
+
+function my_woocommerce_catalog_orderby( $orderby ) {
+    unset($orderby["popularity"]);
+    unset($orderby["rating"]);
+    return $orderby;
+}
+add_filter( "woocommerce_catalog_orderby", "my_woocommerce_catalog_orderby", 20 );
+
+//short desc
+
+function show_subtitle() {
+global $product;
+$id = $product->get_id();
+$excerpt = get_field('excerpt',$id);
+$mediaType = get_field('media_type',$id);
+$pricesFrom = get_field('price_from',$id);
+	
+	
+    if ( $excerpt ) { 
+        echo '<div class="woo__excerpt"><p>'.$excerpt.'<p></span>';
+    }
+	
+	if ( $mediaType || $pricesFrom ) { 
+        echo '
+		<div class="woo_mediaType__pricesFrom__wrapper">
+		<div class="woo__mediaType">'.$mediaType.'</div>
+		<div class="woo__pricesFrom">From £'.$pricesFrom.'</div>
+		</div>		
+		';
+    }
+
+}
+add_action('woocommerce_after_shop_loop_item_title', 'show_subtitle', 1 );
