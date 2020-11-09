@@ -1,4 +1,4 @@
-/*!
+//*!
 Theme Name: Seventh Art 2020 Theme
 Theme URI: http://underscores.me/
 Author: BenjaminTheDev
@@ -21,6 +21,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
+/* -- Google Fonts -- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap'); */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -759,11 +763,6 @@ textarea {
 	margin: 1.5em 0 0;
 }
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -1010,7 +1009,8 @@ ul#primary-menu li{
 ul#primary-menu li a {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 19px;
+	font-size: 28px;
+	font-family: 'Teko', sans-serif;
 }
 
 
@@ -1120,12 +1120,13 @@ ul#primary-menu li a {
 .slider__info {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 28px;
     border: 3px solid #c68e01;
     text-align: center;
     padding: 10px 5px;
 	width: 20vw;
-    margin: 0 auto;
+	margin: 0 auto;
+	font-family: 'Teko', sans-serif;
 }
 
 .woocommerce__message {
@@ -1198,7 +1199,10 @@ div#woo-cat-image {
 .title-container a {
     color: #000;
     text-decoration: none;
-    text-align: center;
+	text-align: center;
+	font-family: 'Teko', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 .welcome__text {
     display: flex;
@@ -1323,6 +1327,9 @@ footer.footer__main {
 	text-decoration: none;
 	color: #000;
 	font-size: 22px;
+	font-family: 'Teko', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 .footer__address {
