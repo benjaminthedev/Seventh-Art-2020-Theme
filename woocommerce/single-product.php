@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-
+<!-- Para section -->
 <?php if( get_field('parallax_image') ): ?>
 	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);"></div>
 <?php endif; ?>
@@ -31,7 +31,7 @@ get_header( 'shop' ); ?>
     width: 99.1vw;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 75vh;
+	min-height: 60vh;
 }
 
 nav.woocommerce-breadcrumb {
@@ -55,6 +55,81 @@ p.price{
 
 
 /* Layout */
+
+.product__woo {
+    display: flex;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.product__wrapper {
+    /* background: green; */
+}
+
+.product__customInfo {
+	/* background: yellow; */
+	width: 70vw;
+	padding-right: 40px;
+}
+
+.product {
+    /* background: blue; */
+    display: flex;
+	flex-direction: column;
+	width: 30vw;
+}
+
+tr {
+    height: 200px;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+
+.product__imageWrap {
+    display: flex;
+}
+
+.product__imageWrap img{
+    width:14vw;
+    margin: 0 14px
+}
+
+img.product__firstImage{
+    margin-left: 0px;
+}
+
+.single-product .product__woo  h1.product_title.entry-title {
+    display: none;
+}
+
+section.up-sells.upsells.products {
+    display: flex;
+    flex-direction: column;
+    background: pink;
+    width: 50vw;
+}
+
+section.up-sells.upsells.products > ul.products.columns-4  {
+    background:#af1919;
+    width:50vw;
+}
+
+
+section.up-sells.upsells.products > ul.products li{
+    width: 8vw;
+    margin: 0px;
+    padding: 0px;
+    background: #af1919;
+    color: #fff;
+    
+}
+
+section.related.products {
+    display: none;
+}
+
 
 
 
