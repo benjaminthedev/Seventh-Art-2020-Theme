@@ -36,10 +36,6 @@ if ( post_password_required() ) {
 	<div class="product__wrapper">
 		<div class="product__woo">
 
-
-            
-
-
 	<div class="product__customInfo">
         <img src="<?php the_field('product_image_one'); ?>" />        
         <img src="<?php the_field('product_image_two'); ?>" />

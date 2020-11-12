@@ -25,14 +25,13 @@ get_header( 'shop' ); ?>
 	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);"></div>
 <?php endif; ?>
 
-
-
 <style>
+
 .parallax__single {
     width: 99.1vw;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 75vh;
 }
 
 nav.woocommerce-breadcrumb {
