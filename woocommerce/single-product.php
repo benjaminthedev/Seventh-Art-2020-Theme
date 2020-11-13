@@ -86,6 +86,9 @@ tr {
     margin: 10px 0;
 }
 
+.product__button {
+    margin-top: 10px;
+}
 
 .product__imageWrap {
     display: flex;
@@ -107,13 +110,15 @@ img.product__firstImage{
 section.up-sells.upsells.products {
     display: flex;
     flex-direction: column;
-    background: pink;
-    width: 50vw;
+    /* background: pink; */
+    /* width: 50vw; */
 }
 
 section.up-sells.upsells.products > ul.products.columns-4  {
-    background:#af1919;
-    width:50vw;
+    /* background:#af1919; */
+	width:30vw;
+	padding: 0px;
+	margin: 0px;
 }
 
 
@@ -121,7 +126,7 @@ section.up-sells.upsells.products > ul.products li{
     width: 8vw;
     margin: 0px;
     padding: 0px;
-    background: #af1919;
+    /* background: #af1919; */
     color: #fff;
     
 }

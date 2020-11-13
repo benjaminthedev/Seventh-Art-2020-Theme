@@ -110,12 +110,9 @@ if ( post_password_required() ) {
 
 
 <script>
-console.log('Hello Single Product');
-// finding .single-product tr and killing link
+	const link_kill = document.querySelectorAll('.single-product td label a');
 
-const link_kill = document.querySelectorAll('.single-product td label a');
-
-link_kill.forEach(function (link_kill) {
-    link_kill.removeAttribute("href");
-});
+	link_kill.forEach(function (link_kill) {
+		link_kill.removeAttribute("href");
+	});
 </script>
