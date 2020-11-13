@@ -236,3 +236,24 @@ $pricesFrom = get_field('price_from',$id);
 
 }
 add_action('woocommerce_after_shop_loop_item_title', 'show_subtitle', 1 );
+
+
+
+
+
+// add_action('woocommerce_after_shop_loop_item', 'custom_hook');
+
+// function custom_hook() {
+
+//     global $post;
+
+//     if (function_exists( 'get_product' )) {
+//         $product = get_product( $post->ID );
+
+//         if ($product->is_type( 'grouped' )) {
+//         // anything you hook into above will be run here for grouped products only.
+//         add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
+//         }
+//     }
+// }

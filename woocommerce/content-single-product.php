@@ -37,8 +37,13 @@ if ( post_password_required() ) {
 		<div class="product__woo">
 
 	<div class="product__customInfo">
-        <img src="<?php the_field('product_image_one'); ?>" />        
-        <img src="<?php the_field('product_image_two'); ?>" />
+       
+	   <div class="product__imageWrap">
+	   	    <img src="<?php the_field('product_image_one'); ?>" class="product__firstImage" />        
+        	<img src="<?php the_field('product_image_two'); ?>" />
+			<img src="<?php the_field('product_image_three'); ?>" />
+		</div>
+
 
         <?php the_content(); ?>
 
@@ -102,3 +107,12 @@ if ( post_password_required() ) {
 
 		</div><!-- end product__woo -->
 </div><!-- end product__wrapper -->
+
+
+<script>
+	const link_kill = document.querySelectorAll('.single-product td label a');
+
+	link_kill.forEach(function (link_kill) {
+		link_kill.removeAttribute("href");
+	});
+</script>

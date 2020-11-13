@@ -32,24 +32,6 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 
-<h6>text acf dewsdews</h6>
-<h3><?php the_field('text'); ?></h3>
-
-
-<h1>Need Coffee</h1>
-
-<img src="<?php the_field('main_background') ?>" alt="Image" class="new__background">
-
-
-<style>
-	.new__background{
-		height: 340px;
-		width: 350px;
-	}
-</style>
-
-
-
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>">

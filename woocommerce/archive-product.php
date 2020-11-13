@@ -30,19 +30,6 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 
-<h1>Need Coffee</h1>
-
-<img src="<?php the_field('main_background') ?>" alt="Image" class="new__background">
-
-
-<style>
-	.new__background{
-		height: 340px;
-		width: 350px;
-	}
-</style>
-
-
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
