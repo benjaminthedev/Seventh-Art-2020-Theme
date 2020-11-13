@@ -143,6 +143,8 @@ function seventhart_scripts() {
 	wp_enqueue_style( 'seventhart-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'seventhart-style', 'rtl', 'replace' );
 
+	wp_enqueue_style( 'wooStylesCheckout', get_stylesheet_directory_uri() . '/woo.css', array(), '1.0.0', false );
+
 	wp_enqueue_script( 'seventhart-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -150,6 +152,9 @@ function seventhart_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'seventhart_scripts' );
+
+
+
 
 /**
  * Implement the Custom Header feature.

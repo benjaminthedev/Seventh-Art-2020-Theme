@@ -57,7 +57,7 @@ if ( post_password_required() ) {
         <?php the_field('excerpt'); ?>
         <?php the_field('media_type'); ?> 
 		<?php the_field('price_from'); ?> 
-		</div><!-- end product__customInfo -->
+	</div><!-- end product__customInfo -->
 
 
 
@@ -90,7 +90,10 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
+</div>
+</div><!-- end product__woo -->
 
+<div class="woo__upsell">
 	<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
@@ -101,11 +104,11 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
-</div>
+</div>	
+
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 
-		</div><!-- end product__woo -->
 </div><!-- end product__wrapper -->
 
 

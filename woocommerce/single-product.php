@@ -107,33 +107,39 @@ img.product__firstImage{
     display: none;
 }
 
+/* -- Upsells Section -- */
+.woo__upsell {
+    padding: 10px 50px;
+}
 section.up-sells.upsells.products {
     display: flex;
     flex-direction: column;
-    /* background: pink; */
-    /* width: 50vw; */
 }
-
 section.up-sells.upsells.products > ul.products.columns-4  {
-    /* background:#af1919; */
 	width:30vw;
 	padding: 0px;
 	margin: 0px;
 }
-
-
 section.up-sells.upsells.products > ul.products li{
     width: 8vw;
     margin: 0px;
     padding: 0px;
-    /* background: #af1919; */
-    color: #fff;
-    
 }
-
+section.up-sells.upsells.products .woocommerce-loop-product__title {
+    font-size: 0.9em!important;
+}
 section.related.products {
     display: none;
 }
+/* Ordering Items in TD box */
+.woocommerce-grouped-product-list-item__quantity {
+    order: 1;
+}
+
+.woocommerce-grouped-product-list-item__add {
+    order: 2;
+}
+
 
 
 
