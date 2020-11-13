@@ -39,6 +39,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 					'quantity',
 					'label',
 					'price',
+					'add',
 				),
 				$product
 			);
@@ -90,20 +91,21 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 							break;
 						case 'label':
 							$value  = '<label for="product-' . esc_attr( $grouped_product_child->get_id() ) . '">';
-							$value .= $grouped_product_child->is_visible() ? '<a href="' . esc_url( apply_filters( 'woocommerce_grouped_product_list_link', $grouped_product_child->get_permalink(), $grouped_product_child->get_id() ) ) . '">' . $grouped_product_child->get_name() . '</a>' : $grouped_product_child->get_name();
+							$value .= $grouped_product_child->is_visible() ? '<b href="' . esc_url( apply_filters( 'woocommerce_grouped_product_list_link', $grouped_product_child->get_permalink(), $grouped_product_child->get_id() ) ) . '">' . $grouped_product_child->get_name() . '</b>' : $grouped_product_child->get_name();
 							$value .= '</label>';
 							break;
 						case 'price':
 							$value = $grouped_product_child->get_price_html() . wc_get_stock_html( $grouped_product_child );
-							//$value .= '<p class="duhdug">Checkout button below</p>';	
-							$value .= '<div class="product__button"><button type="submit" class="single_add_to_cart_button button alt">Buy Now</button></div>';
+							break;
+						case 'add':
+							$value = '<div class="product__button"><button type="submit" class="single_add_to_cart_button button alt">Buy Now</button></div>';
 							break;
 						default:
 							$value = '';
 							break;
 					}
 
-					echo '<td class="woocommerce-grouped-product-list-item__' . esc_attr( $column_id ) . '">' . apply_filters( 'woocommerce_grouped_product_list_column_' . $column_id, $value, $grouped_product_child ) . '</td>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					echo '<td class="woo__grouped woocommerce-grouped-product-list-item__' . esc_attr( $column_id ) . '">' . apply_filters( 'woocommerce_grouped_product_list_column_' . $column_id, $value, $grouped_product_child ) . '</td>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 					do_action( 'woocommerce_grouped_product_list_after_' . $column_id, $grouped_product_child );
 				}
