@@ -958,7 +958,7 @@ textarea {
 
 header#masthead {
     background-color: rgba(0, 0, 0, 0.2);
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 100vw;
     overflow: hidden;
@@ -1004,10 +1004,8 @@ ul#primary-menu li a:hover {
 
 
 /*--------------------------------------------------------------
-# Header
+# Sliders Home Page
 --------------------------------------------------------------*/
-
-
 
 .slider {
   /* position: relative; */
@@ -1184,7 +1182,6 @@ div#woo-cat-image {
 .title-container  {
     text-align: center;
 }
-
 .title-container a {
     color: #000;
     text-decoration: none;
@@ -1205,8 +1202,11 @@ div#woo-cat-image {
     text-align: center;
     width: 40vw;
 }
-
-
+.helloWorld .woocommerce {
+	width: 80vw;
+	margin: 0 auto;
+	margin-top: 100px;
+}
 
 
 
@@ -1216,6 +1216,7 @@ div#woo-cat-image {
 /* Footer Section */
 
 footer.footer__main {
+	clear: both;
     background: gainsboro;
     padding: 60px 0;
     display: flex;

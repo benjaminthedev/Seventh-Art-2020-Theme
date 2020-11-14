@@ -14,9 +14,13 @@
 
 get_header();
 ?>
+</div>
+
 
 	<main id="primary" class="site-main">
 
+
+	<div class="helloWorld">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -32,6 +36,7 @@ get_header();
 		?>
 
 	</main><!-- #main -->
+</div>
 
 <?php
 get_sidebar();

@@ -150,6 +150,10 @@ function seventhart_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if (is_page(8)) {
+		wp_enqueue_script( 'cartJS', get_stylesheet_directory_uri() . '/js/cart.js', array(), '1.0.0', true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'seventhart_scripts' );
 

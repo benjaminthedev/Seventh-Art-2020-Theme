@@ -44,19 +44,9 @@ if ( post_password_required() ) {
 			<img src="<?php the_field('product_image_three'); ?>" />
 		</div>
 
-
         <?php the_content(); ?>
 
-        <h4>Content Below:</h4>
-        <?php the_field('content'); ?>
-
-    
-        <?php the_field('dvd'); ?>
-        <?php the_field('download'); ?>
-        <?php the_field('stream'); ?>
-        <?php the_field('excerpt'); ?>
-        <?php the_field('media_type'); ?> 
-		<?php the_field('price_from'); ?> 
+     
 	</div><!-- end product__customInfo -->
 
 
@@ -89,9 +79,29 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+
+
+
+	<br />
+
+		<div class="woo__buyingGuide">
+			<h4>Buying Guide:</h4>
+			
+			<p><?php the_field('dvd'); ?></p>
+			<p><?php the_field('download'); ?></p>
+			<p><?php the_field('stream'); ?></p>
+
+
+			<?php //the_field('content'); ?>
+			<p><?php //the_field('excerpt'); ?></p>
+			<p><?php //the_field('media_type'); ?> </p>
+			<p><?php //the_field('price_from'); ?> </p>
+		</div>
 	</div>
 </div>
 </div><!-- end product__woo -->
+
+	
 
 <div class="woo__upsell">
 	<?php
@@ -104,7 +114,10 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
+
 </div>	
+
+
 
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
