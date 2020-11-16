@@ -230,12 +230,24 @@ a.button.product_type_grouped {
 # Custom WooCommerce Product Pages Styles
 --------------------------------------------------------------*/
 
-.parallax__single {
+.parallax__single,
+.parallax.pro-cat-page {
     width: 99.9vw;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-	min-height: 60vh;
+    min-height: 45vh;
+    
+    /* for the image above */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* Image Wrapper above main slider! */
+.para__imageWrap {
+    width: 30vw;
+}
+
 
 nav.woocommerce-breadcrumb {
     display: none;
