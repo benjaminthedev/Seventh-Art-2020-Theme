@@ -56,12 +56,12 @@ do_action( 'woocommerce_before_main_content' );
 			background-color: lightblue !important;
 		} */
 
-		.parallax_image_responsive {
+		/* .parallax_image_responsive {
 			width: 92vw;
 			height: 44vh;
 			background-repeat: no-repeat;
 			background-size: contain;
-		}
+		} */
 
 		.exhibition-on-screen-2 .productCat__image {
 			display: none;
