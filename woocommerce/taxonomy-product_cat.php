@@ -35,12 +35,39 @@ do_action( 'woocommerce_before_main_content' );
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
-	
-	<div class="productCat__image">
-		<?php if( get_field('parallax_image') ): ?>
-			<div class="parallax pro-cat-page"  style="background-image: url(<?php the_field('parallax_image'); ?>);"></div>
+
+	<?php
+		// get the current taxonomy term
+		$term = get_queried_object();
+
+		// vars
+		$image = get_field('parallax_image', $term);
+		$paraText = get_field('parallax_text', $term);
+		$paraTextImg = get_field('parallax_text_image', $term);
+		$color = get_field('color', $term);
+	?>
+
+	<div class="productCat__image">	
+		<?php if( $image ): ?>
+			<div class="parallax pro-cat-page"  style="background-image: url(<?php echo $image; ?>);">
+			
+				<?php if( $paraText ): ?>
+					<div class="para__textWrap">
+						<p>this is where the text goes</p>
+					</div>
+				<?php endif; ?>	
+
+				<?php if( $paraTextImg ): ?>
+					<div class="para__imageWrap">
+						<img src="<?php echo $paraTextImg ?>" alt="This is a para Text" class="para__image"/>
+					</div>
+				<?php endif; ?>					
+
+
+			
+			</div><!-- end parallax pro-cat-page -->
 		<?php endif; ?>
-	</div>	
+	</div>	 
 
 
 	<div class="productCat__imageResponsive">
