@@ -22,7 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' ); ?>
 <!-- Para section -->
 <?php if( get_field('parallax_image') ): ?>
-	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);"></div>
+	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);">
+
+	Text: <?php the_field('parallax_text') ?>
+
+
+
+</div>
 <?php endif; ?>
 
 
