@@ -236,6 +236,8 @@ a.button.product_type_grouped {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 45vh;
+    margin-bottom: 40px;
+
     
     /* for the image above */
 
