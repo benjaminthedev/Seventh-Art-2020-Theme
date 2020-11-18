@@ -266,3 +266,19 @@ add_action('woocommerce_after_shop_loop_item_title', 'show_subtitle', 1 );
 //         }
 //     }
 // }
+
+
+
+
+// /**
+//  * @desc Remove in all product type
+//  */
+// function wc_remove_all_quantity_fields( $return, $product ) {
+//     return true;
+// }
+// add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
+
+// function cw_remove_quantity_fields( $return, $product ) {
+//     return true;
+// }
+// add_filter( 'woocommerce_is_sold_individually', 'cw_remove_quantity_fields', 10, 2 );
