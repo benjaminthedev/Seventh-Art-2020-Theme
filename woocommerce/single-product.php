@@ -24,7 +24,11 @@ get_header( 'shop' ); ?>
 <?php if( get_field('parallax_image') ): ?>
 	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);">
 
-	Text: <?php the_field('parallax_text') ?>
+	<?php the_field('parallax_text_-_no_image_overlay') ?>
+
+	<img src="<?php the_field('parallax_text_image_overlay')?>" alt="">
+	
+	
 
 
 
