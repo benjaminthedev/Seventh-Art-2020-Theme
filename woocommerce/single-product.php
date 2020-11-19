@@ -75,9 +75,37 @@ get_header( 'shop' ); ?>
 		?>
     		
 
+<style>
+td.woo__grouped.woocommerce-grouped-product-list-item__quantity {
+    display: none;
+}
+</style>
+<script>
+console.log('single products');
+//Get the tr
+const getTr = document.querySelectorAll('tr');
 
+getTr.forEach(eachItem);
+
+const checkBox = document.querySelectorAll('input.wc-grouped-product-add-to-cart-checkbox');
+function eachItem(item, index){
+	//Get the checkbox
+	item.addEventListener("mouseenter", function( event ) {   
+			console.log('Mouse Enter'); 
+			checkBox[index].checked = true;
+	}, false);
+
+	item.addEventListener("mouseleave", function( event ) {   
+			console.log('Mouse leave'); 
+			checkBox[index].checked = false;
+	}, false);
+	//console.log(item);
+	//console.log(index);
+}
+</script>
 
 <?php
 get_footer( 'shop' );
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+
