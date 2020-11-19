@@ -134,3 +134,9 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 </form>
 
 <?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
+
+<script>
+console.log('single products');
+
+const getTr = document.querySelectorAll('tr');
+</script>
