@@ -65,14 +65,7 @@ get_header( 'shop' ); ?>
 			do_action( 'woocommerce_after_main_content' );
 		?>
 
-		<?php
-			/**
-			 * woocommerce_sidebar hook.
-			 *
-			 * @hooked woocommerce_get_sidebar - 10
-			 */
-			//do_action( 'woocommerce_sidebar' );
-		?>
+
     		
 
 <style>
@@ -102,6 +95,22 @@ function eachItem(item, index){
 	//console.log(item);
 	//console.log(index);
 }
+
+// Message when some has added to cart
+
+const buttonClicked = document.querySelectorAll('.single_add_to_cart_button');
+
+buttonClicked.forEach(clicked);
+
+function clicked(item, index){
+	item.addEventListener('click', function(event){
+		console.log('clicked');
+	});
+}
+
+
+
+
 </script>
 
 <?php
