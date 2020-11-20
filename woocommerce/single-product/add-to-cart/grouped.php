@@ -40,6 +40,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 					'label',
 					'price',
 					'add',
+					'clicked',
+					'clickedNew',
 				),
 				$product
 			);
@@ -62,6 +64,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				// Output columns for each product.
 				foreach ( $grouped_product_columns as $column_id ) {
 					do_action( 'woocommerce_grouped_product_list_before_' . $column_id, $grouped_product_child );
+
+						
 
 					switch ( $column_id ) {
 						case 'quantity':
@@ -90,7 +94,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 							$value = ob_get_clean();
 							break;
 						case 'label':
-							$value  = '<label for="product-' . esc_attr( $grouped_product_child->get_id() ) . '">';
+							$value = '<label for="product-' . esc_attr( $grouped_product_child->get_id() ) . '">';
 							$value .= $grouped_product_child->is_visible() ? '<b href="' . esc_url( apply_filters( 'woocommerce_grouped_product_list_link', $grouped_product_child->get_permalink(), $grouped_product_child->get_id() ) ) . '">' . $grouped_product_child->get_name() . '</b>' : $grouped_product_child->get_name();
 							$value .= '</label>';
 							break;
@@ -100,10 +104,18 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 						case 'add':
 							$value = '<div class="product__button"><button type="submit" class="single_add_to_cart_button button alt">Buy Now</button></div>';
 							break;
+						case 'clicked':
+							$value = '<div class="added__cart show">1 added to bask</div>';
+							break;
+						case 'clickedNew':
+							$value = '<div class="added__cartLink show"><a href="/cart/">Go To Basket</a></div>';
+							break;														
 						default:
 							$value = '';
 							break;
 					}
+
+						
 
 					echo '<td class="woo__grouped woocommerce-grouped-product-list-item__' . esc_attr( $column_id ) . '">' . apply_filters( 'woocommerce_grouped_product_list_column_' . $column_id, $value, $grouped_product_child ) . '</td>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
@@ -135,8 +147,3 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
-<script>
-console.log('single products');
-
-const getTr = document.querySelectorAll('tr');
-</script>

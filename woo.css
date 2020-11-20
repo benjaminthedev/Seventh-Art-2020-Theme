@@ -42,9 +42,11 @@ h3#ship-to-different-address {
 .woocommerce-page a.button,
 .woocommerce button.button,
 .woocommerce-page button.button {
-	text-transform: capitalize !important;
-	background: #ffa500 !important;
-	color: #222 !important;
+	text-transform: uppercase;
+	background: #BF0000;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
 } 
 .woocommerce button.button.alt:hover, 
 .woocommerce-page button.button.alt:hover,
@@ -54,8 +56,7 @@ h3#ship-to-different-address {
 .woocommerce-page a.button:hover,
 .woocommerce button.button:hover,
 .woocommerce-page button.button:hover {
-	background: #00adad !important;
-	color: #fff !important;
+	background:#ff0000;
 }
 /*** PAYMENT BOX ON CHECKOUT ***/
 #add_payment_method #payment div.payment_box, 
@@ -129,3 +130,16 @@ h3#ship-to-different-address {
 	background: #222 !important;
 	height: 46px; /* you may need to change this based on your font size */
 }
+
+.woocommerce-grouped-product-list-item__clicked,
+.woocommerce-grouped-product-list-item__clickedNew {
+	visibility: hidden;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.woocommerce-grouped-product-list-item__clicked.showMe,
+.woocommerce-grouped-product-list-item__clickedNew.showMe {
+	visibility: visible;
+}
+

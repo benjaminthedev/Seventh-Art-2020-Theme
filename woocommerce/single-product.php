@@ -65,14 +65,7 @@ get_header( 'shop' ); ?>
 			do_action( 'woocommerce_after_main_content' );
 		?>
 
-		<?php
-			/**
-			 * woocommerce_sidebar hook.
-			 *
-			 * @hooked woocommerce_get_sidebar - 10
-			 */
-			//do_action( 'woocommerce_sidebar' );
-		?>
+
     		
 
 <style>
@@ -102,6 +95,40 @@ function eachItem(item, index){
 	//console.log(item);
 	//console.log(index);
 }
+
+// Message when some has added to cart
+
+const buttonClicked = document.querySelectorAll('.single_add_to_cart_button');
+
+buttonClicked.forEach(clicked);
+
+	
+
+function clicked(item, index){
+
+	const findItemClicked = document.querySelectorAll('.woocommerce-grouped-product-list-item__clicked');
+	const findItemClickedNew = document.querySelectorAll('.woocommerce-grouped-product-list-item__clickedNew');
+
+	item.addEventListener('click', function(event){
+		console.log('Buy Now Clicked');				
+		findItemClicked[index].classList.add('showMe');
+		findItemClickedNew[index].classList.add('showMe');
+	});
+
+	// item.addEventListener('mouseenter', function(event){
+	// 	findItemClicked[index].classList.add('showMe');
+	// 	findItemClickedNew[index].classList.add('showMe');
+	// });
+
+	// item.addEventListener('mouseleave', function(event){
+	// 	findItemClicked[index].classList.remove('showMe');
+	// 	findItemClickedNew[index].classList.remove('showMe');
+	// });
+}
+
+
+
+
 </script>
 
 <?php
