@@ -41,6 +41,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 					'price',
 					'add',
 					'clicked',
+					'clickedNew',
 				),
 				$product
 			);
@@ -104,9 +105,11 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 							$value = '<div class="product__button"><button type="submit" class="single_add_to_cart_button button alt">Buy Now</button></div>';
 							break;
 						case 'clicked':
-							$value .= '<div class="added__cart show">1 added to bask</div>';
-							$value = '<div class="added__cartLink show"><a href="#">Go To Basket</a></div>';
-							break;							
+							$value = '<div class="added__cart show">1 added to bask</div>';
+							break;
+						case 'clickedNew':
+							$value = '<div class="added__cartLink show"><a href="/cart/">Go To Basket</a></div>';
+							break;														
 						default:
 							$value = '';
 							break;
