@@ -1280,7 +1280,16 @@ footer.footer__main {
 # Responsive Styles
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Responsive Styles 
+--------------------------------------------------------------*/
+
 @media (max-width: 575.98px) { 
+
+	.site-branding{
+        width: 40%;
+	}
+	
 	nav#site-navigation {
     	display: none;
 	}
@@ -1315,11 +1324,16 @@ footer.footer__main {
 
 	.footer__nav ul {
 		flex-direction: column;
+		margin: 0;
 	}	
 
 	.footer__nav ul li{
 		text-align: center;
 		padding:0;
+	}
+
+	.footer__address {
+    	margin-top: 30px;
 	}
 }
 
