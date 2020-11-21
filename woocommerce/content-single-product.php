@@ -43,6 +43,13 @@ if ( post_password_required() ) {
         	<img src="<?php the_field('product_image_two'); ?>" />
 			<img src="<?php the_field('product_image_three'); ?>" />
 		</div>
+		
+		<div class="product__youtube">
+			<?php the_field('video_pop_up'); ?>
+		<button class="youtube__close">Close Video</button>
+
+		</div>
+
 
         <?php the_content(); ?>
 

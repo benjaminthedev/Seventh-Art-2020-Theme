@@ -116,8 +116,24 @@ function clicked(item, index){
 	});
 }
 
+//Video Clicked
+const videoTitleClicked = document.querySelector('.product__firstImage');
+//Video Youtube
+const video = document.querySelector('.product__youtube');
+//Close Video Btn
+const videoCloseBtn = document.querySelector('.youtube__close');
 
 
+	//Opens The Video
+	videoTitleClicked.addEventListener('click', function(event){
+		console.log('Video Image Clicked');				
+		video.classList.add('show__video');
+	});
+	//Closes The Video
+	videoCloseBtn.addEventListener('click', function(event){
+		console.log('Close Btn Clicked');				
+		video.classList.remove('show__video');
+	});
 
 </script>
 
