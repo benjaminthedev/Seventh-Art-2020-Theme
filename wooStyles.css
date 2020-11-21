@@ -44,11 +44,6 @@ span.price {
  .berocket_better_labels span {
     margin-top: 9.04em !important;
 }
- h2.woocommerce-loop-product__title {
-    font-family: Teko, sans-serif !important;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-}
  .woocommerce a.news-read-more {
     display: none;
 }

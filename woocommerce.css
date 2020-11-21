@@ -86,7 +86,7 @@ ul.products li img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 }
  h2.woocommerce-loop-product__title {
     font-family: Teko, sans-serif !important;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.04em;
 }
  .woocommerce a.news-read-more {
@@ -235,21 +235,45 @@ a.button.product_type_grouped {
     width: 99.9vw;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 45vh;
+    min-height: 50vh;
     margin-bottom: 40px;
-
     
     /* for the image above */
-
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 /* Image Wrapper above main slider! */
 .para__imageWrap {
     width: 30vw;
 }
+.parallax__textOverlayWrapper {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: green; */
+    margin: 0 auto;
+    height: 25vw;
+}
+img.parallax__textOverlay {
+    width: 29vw;
+    margin-top: 165px;
+}
+/* If not image use text */
 
+h3.parallax__textNoOverLay{
+    color: #fff;
+    /* font-size: 64px; */
+    font-size: 120px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 100;
+    align-self: center;
+    text-transform: uppercase;
+
+    /* Try This */
+    width: 60vw;
+    text-align: center;
+}
 
 nav.woocommerce-breadcrumb {
     display: none;
