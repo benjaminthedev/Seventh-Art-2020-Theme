@@ -271,11 +271,9 @@ h3.parallax__textNoOverLay{
     text-transform: uppercase;
 
     /* Try This */
-
     width: 60vw;
     text-align: center;
 }
-
 
 nav.woocommerce-breadcrumb {
     display: none;
