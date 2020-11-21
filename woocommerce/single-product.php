@@ -24,10 +24,16 @@ get_header( 'shop' ); ?>
 <?php if( get_field('parallax_image') ): ?>
 	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);">
 
-	<?php the_field('parallax_text_-_no_image_overlay') ?>
-
-	<img src="<?php the_field('parallax_text_image_overlay')?>" alt="">
+	<h3 class="parallax__textNoOverLay">
+		<!-- <?php //the_field('parallax_text_-_no_image_overlay') ?> -->
+		<?php the_title(); ?>
+	</h3>
 	
+	<!-- <div class="parallax__textOverlayWrapper">
+		<img src="<?php //the_field('parallax_text_image_overlay')?>" class="parallax__textOverlay">
+	</div>	 -->
+	
+
 	
 
 
@@ -97,15 +103,9 @@ function eachItem(item, index){
 }
 
 // Message when some has added to cart
-
 const buttonClicked = document.querySelectorAll('.single_add_to_cart_button');
-
 buttonClicked.forEach(clicked);
-
-	
-
 function clicked(item, index){
-
 	const findItemClicked = document.querySelectorAll('.woocommerce-grouped-product-list-item__clicked');
 	const findItemClickedNew = document.querySelectorAll('.woocommerce-grouped-product-list-item__clickedNew');
 
@@ -114,16 +114,6 @@ function clicked(item, index){
 		findItemClicked[index].classList.add('showMe');
 		findItemClickedNew[index].classList.add('showMe');
 	});
-
-	// item.addEventListener('mouseenter', function(event){
-	// 	findItemClicked[index].classList.add('showMe');
-	// 	findItemClickedNew[index].classList.add('showMe');
-	// });
-
-	// item.addEventListener('mouseleave', function(event){
-	// 	findItemClicked[index].classList.remove('showMe');
-	// 	findItemClickedNew[index].classList.remove('showMe');
-	// });
 }
 
 
