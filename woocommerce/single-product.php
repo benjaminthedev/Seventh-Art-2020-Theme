@@ -20,26 +20,35 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-<!-- Para section -->
-<?php if( get_field('parallax_image') ): ?>
-	<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);">
-
-	<h3 class="parallax__textNoOverLay">
-		<!-- <?php //the_field('parallax_text_-_no_image_overlay') ?> -->
-		<?php the_title(); ?>
-	</h3>
-	
-	<!-- <div class="parallax__textOverlayWrapper">
-		<img src="<?php //the_field('parallax_text_image_overlay')?>" class="parallax__textOverlay">
-	</div>	 -->
-	
-
-	
 
 
+<div class="product__single__desktop">
+	<!-- Para section -->
+	<?php if( get_field('parallax_image') ): ?>
+		<div class="parallax__single"  style="background-image: url(<?php the_field('parallax_image'); ?>);">
 
+		<h3 class="parallax__textNoOverLay">
+			<!-- <?php //the_field('parallax_text_-_no_image_overlay') ?> -->
+			<?php the_title(); ?>
+		</h3>
+		
+		<!-- <div class="parallax__textOverlayWrapper">
+			<img src="<?php //the_field('parallax_text_image_overlay')?>" class="parallax__textOverlay">
+		</div>	 -->
+	</div>
+	<?php endif; ?>
 </div>
-<?php endif; ?>
+
+
+<div class="product__reponsiveBackground">
+	<?php if( get_field('parallax_image') ): ?>
+		<div class="parallax__single__mobile"  style="background-image: url(<?php the_field('parallax_image'); ?>);">
+			<h3 class="parallax__textNoOverLay">
+				<?php the_title(); ?>
+			</h3>
+		</div>
+	<?php endif; ?>
+</div>
 
 
 	<?php
