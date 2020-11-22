@@ -92,12 +92,14 @@ if ( post_password_required() ) {
 	<br />
 
 		<div class="woo__buyingGuide">
-			<h4>Buying Guide:</h4>
+			<h4>BUYING GUIDE:</h4>
 			
-			<p><?php the_field('dvd'); ?></p>
+			<h4>Download</h4>
 			<p><?php the_field('download'); ?></p>
+			<h4>Stream</h4>
 			<p><?php the_field('stream'); ?></p>
-
+			<h4>DVD</h4>
+			<p><?php the_field('dvd'); ?></p>
 
 			<?php //the_field('content'); ?>
 			<p><?php //the_field('excerpt'); ?></p>

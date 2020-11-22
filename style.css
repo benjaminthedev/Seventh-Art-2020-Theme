@@ -424,6 +424,7 @@ h6 {
 p {
 	margin-bottom: 1.5em;
 	font-family: 'Lato', sans-serif;
+	font-weight: 100;
 }
 
 dfn,
@@ -1190,7 +1191,8 @@ div#woo-cat-image {
 	text-align: center;
 	font-family: 'Teko', sans-serif;
     font-size: 26px;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	font-weight: 100;
 }
 .title-container a:hover {
 	color:#C58E02;
@@ -1202,7 +1204,10 @@ div#woo-cat-image {
 }
 .welcome__text p{
     text-align: center;
-    width: 40vw;
+    width: 60vw;
+    font-size: 22px;
+    margin: 0;
+
 }
 .helloWorld .woocommerce {
 	width: 80vw;

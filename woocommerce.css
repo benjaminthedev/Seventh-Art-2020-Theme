@@ -110,6 +110,7 @@ ul.products li img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
  .woo__mediaType {
     color: #ff9000;
@@ -213,9 +214,13 @@ ul.products .woocommerce-loop-product__title {
 .single .woo_mediaType__pricesFrom__wrapper {
     display: none;
 }
-.tax-product_cat .site-branding {
+/* .tax-product_cat .site-branding {
     width: 8%;
-    margin-top: 30px;
+    margin-top: 10px;
+} */
+
+.woo__excerpt a p {
+    margin: 0;
 }
 a.button.product_type_grouped {
     display: none !important;
@@ -233,15 +238,13 @@ a.button.product_type_grouped {
 /* Single Product Page */
 .parallax__single,
 .parallax__single__mobile{
-    width: 99.9vw;
+      width: 99.9vw;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
     margin-bottom: 40px;
-    
-    /* for the image above */
     display: flex;
     justify-content: center;
+    height: 45vh;
 }
 
 /* -- Product Category Page -- */
@@ -249,7 +252,7 @@ a.button.product_type_grouped {
     width: 99.9vw;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 38vh;
     margin-bottom: 40px;    
     
     
@@ -264,6 +267,7 @@ a.button.product_type_grouped {
 /* Image Wrapper above main slider! */
 .para__imageWrap {
     width: 30vw;
+    margin-top: 60px;
 }
 .parallax__textOverlayWrapper {
     width: 50vw;
@@ -281,17 +285,19 @@ img.parallax__textOverlay {
 /* If not image use text */
 
 h3.parallax__textNoOverLay{
-    color: #fff;
-    /* font-size: 64px; */
-    font-size: 120px;
+color: #fff;
+    font-size: 100px;
     font-family: 'Teko', sans-serif;
     font-weight: 100;
     align-self: center;
     text-transform: uppercase;
-
-    /* Try This */
-    width: 60vw;
+    line-height: 80px;
+    margin-top: 300px;
+    /* width: 60vw; */
     text-align: center;
+
+    letter-spacing: -2px;
+
 }
 
 nav.woocommerce-breadcrumb {
@@ -323,15 +329,13 @@ p.price{
 }
 
 .product__customInfo {
-	/* background: yellow; */
 	width: 60vw;
 	padding-right: 40px;
 }
 
-/* #main__productWrap {
-    display: flex;
-	width: 24vw;
-} */
+.product__customInfo h3 {
+    font-size: 22px;
+}
 
 /* Youtube Video */
 img.product__firstImage {
@@ -341,7 +345,6 @@ img.product__firstImage {
 .product__youtube {
     height: 0px;
 	visibility: hidden;
-    /* transition-duration: 0.5s; */
 }
 .product__youtube.show__video {
     width: 46vw;
@@ -349,7 +352,6 @@ img.product__firstImage {
     visibility: visible;
     opacity: 1;
     margin-top: 50px;
-    /* transition-delay: 0.2s; */
 }
 
 #main__productWrap > tr {
@@ -452,6 +454,8 @@ section.related.products {
 .woocommerce-page .woocommerce-info .button,
 .woocommerce-page .woocommerce-message .button {
     float: right;
+    margin-top: -10px;
+    text-decoration: none;
 }
 .woocommerce .col2-set,
 .woocommerce-page .col2-set {
@@ -554,11 +558,11 @@ section.related.products {
 .woocommerce-page div.product div.thumbnails.columns-5 a {
     width: 16.9%;
 }
-.woocommerce #content div.product div.summary,
+/* .woocommerce #content div.product div.summary,
 .woocommerce div.product div.summary,
 .woocommerce-page #content div.product div.summary,
 .woocommerce-page div.product div.summary {
-}
+} */
 .woocommerce #content div.product .woocommerce-tabs,
 .woocommerce div.product .woocommerce-tabs,
 .woocommerce-page #content div.product .woocommerce-tabs,
@@ -1081,7 +1085,17 @@ section.related.products {
 }
 
 
-
+.woo__buyingGuide {
+    width: 10vw;
+}
+.woo__buyingGuide h4, 
+.woo__buyingGuide p{
+    margin:0;
+    padding: 0;
+}
+.woo__buyingGuide h4:nth-child(1){
+    margin-bottom: 20px;
+}
 
 
 
@@ -1135,12 +1149,25 @@ section.related.products {
     .woo__upsell {
         display: none;
     }
-}
-@media (min-width: 576px) and (max-width: 767.98px) { 
-      h3.parallax__textNoOverLay{
-        font-size: 50px;
+
+    .woocommerce ul.products, 
+    .woocommerce-page ul.products{
+        margin: 0;
+    }
+    .woo__buyingGuide {
+        width: 80vw;
     }
 
+
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h3.parallax__textNoOverLay{
+        font-size: 50px;
+    }
+    .woo__buyingGuide {
+        width: 80vw;
+    }    
 
     .product__reponsiveBackground{
         display: block;
@@ -1184,6 +1211,9 @@ section.related.products {
         font-size: 50px;
     }
 
+    .woo__buyingGuide {
+        width: 80vw;
+    }    
 
     .product__reponsiveBackground{
         display: block;

@@ -47,6 +47,7 @@ h3#ship-to-different-address {
 	color: #fff;
 	padding: 10px;
 	cursor: pointer;
+	text-decoration: none;
 } 
 .woocommerce button.button.alt:hover, 
 .woocommerce-page button.button.alt:hover,
@@ -109,7 +110,27 @@ h3#ship-to-different-address {
 .woocommerce-message, 
 .woocommerce-error, 
 .woocommerce-info {
-	background: #b33f62 !important;
+	background: #dcdcdc !important;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+ul.woocommerce-error {
+    margin: 0;
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+ul.woocommerce-error li {
+    list-style-type: none;
+    font-weight: 600;
+}
+ul.woocommerce-error li a.button.wc-forward,
+ul.woocommerce-message li a.button.wc-forward,
+ul.woocommerce-info li a.button.wc-forward {
+	margin-top: -10px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 2px;
 }
 /*** ORDER NOTES ON CHECKOUT ***/
 .woocommerce-checkout .woocommerce form .form-row textarea {
@@ -143,3 +164,23 @@ h3#ship-to-different-address {
 	visibility: visible;
 }
 
+/*** COUPON BOX ***/
+input#coupon_code {
+    width: 10vw;
+    text-align: center;
+}
+
+
+/* WooCommere Pages Checkout / Cart Remove title and move up the header */
+
+.woocommerce-cart header#masthead{
+	margin-top: -21px;
+}
+
+.woocommerce-cart h1.entry-title {
+    visibility: hidden;
+}
+
+.woocommerce-cart .cross-sells {
+    display: none;
+}

@@ -70,7 +70,6 @@ span.price {
 
 
 
-
 @media (min-width: 300px) and (max-width: 767.98px) {
     .woocommerce ul.products[class*="columns-"] li.product,
     .woocommerce-page ul.products[class*="columns-"] li.product {
