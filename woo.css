@@ -173,14 +173,24 @@ input#coupon_code {
 
 /* WooCommere Pages Checkout / Cart Remove title and move up the header */
 
-.woocommerce-cart header#masthead{
+.woocommerce-cart header#masthead,
+.woocommerce-checkout header#masthead{
 	margin-top: -21px;
 }
 
-.woocommerce-cart h1.entry-title {
+.woocommerce-cart h1.entry-title,
+.woocommerce-checkout h1.entry-title,
+.woocommerce-page h1.entry-title {
     visibility: hidden;
 }
 
 .woocommerce-cart .cross-sells {
     display: none;
+}
+
+.checkout__info{
+	width:  80vw;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 150px;
 }
