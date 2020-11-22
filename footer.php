@@ -15,10 +15,10 @@
 		
 		<div class="footer__nav">
 			<ul>
-				<li><a href="">Contact Us</a></li>	
-				<li><a href="">Exhibition On Screen</a></li>	
-				<li><a href="">FAQs</a></li>	
-				<li><a href="">Privacy</a></li>	
+				<li><a href="/contact/">Contact Us</a></li>	
+				<li><a href="https://exhibitiononscreen.com/" target="_blank">Exhibition On Screen</a></li>	
+				<li><a href="/faqs/">FAQs</a></li>	
+				<li><a href="/privacy/">Privacy</a></li>	
 			</ul>
 		</div>
 
