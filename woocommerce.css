@@ -1097,6 +1097,10 @@ section.related.products {
     margin-bottom: 20px;
 }
 
+span.onsale {
+    display: none;
+}
+
 
 
 /*--------------------------------------------------------------
