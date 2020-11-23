@@ -228,15 +228,27 @@ $pricesFrom = get_field('price_from',$id);
 	
 	
     if ( $excerpt ) { 
-        echo '<div class="woo__excerpt"><p>'.$excerpt.'<p></span>';
+		echo '
+		<?php if( get_field($excerpt) ): ?>
+			<div class="woo__excerpt"><p>'.$excerpt.'<p></span>
+		<?php endif; ?>
+		';
     }
 	
 	if ( $mediaType || $pricesFrom ) { 
-        echo '
+		echo '
+		
 		<div class="woo_mediaType__pricesFrom__wrapper">
-		<div class="woo__mediaType">'.$mediaType.'</div>
-		<div class="woo__pricesFrom">From £'.$pricesFrom.'</div>
-		</div>		
+		
+		<?php if( $mediaType ): ?>
+			<div class="woo__mediaType">'.$mediaType.'</div>
+		<?php endif; ?>	
+
+		<?php if( $pricesFrom ): ?>
+			<div class="woo__pricesFrom">From £'.$pricesFrom.'</div>
+		<?php endif; ?>				
+		</div>
+
 		';
     }
 
