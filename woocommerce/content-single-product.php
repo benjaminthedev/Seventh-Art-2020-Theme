@@ -51,8 +51,51 @@ if ( post_password_required() ) {
 		</div>
 
 
-        <?php the_content(); ?>
+		<?php the_content(); ?>
+		
+		<!-- Flexible Content -->
 
+		
+	<?php
+		
+		if( have_rows('content') ):
+
+										// loop through the rows of data
+										while ( have_rows('content') ) : the_row();
+
+												if( get_row_layout() == 'content_info' ):?>
+												<div class="info-text">
+													<?php if( get_row_layout('title') ): ?>
+														<p><strong><?php the_sub_field('title'); ?></strong></p>
+													<?php endif; ?>	
+
+													 <?php if( get_row_layout('running_time') ): ?>
+														<p>Running Time: <?php the_sub_field('running_time'); ?></p>
+													<?php endif; ?>	
+												
+													<?php if( get_row_layout('subtitles') ): ?>
+														<p><strong>DVD has these subtitles</strong>: <?php the_sub_field('subtitles'); ?></p>
+													<?php endif; ?>	
+
+													<?php if( get_row_layout('extra_info') ): ?>	
+														<p><?php the_sub_field('extra_info'); ?></p>	
+													<?php endif; ?>	
+												</div>
+												<?php 
+
+												endif;
+
+										endwhile;
+
+								else :
+
+										// no layouts found
+
+								endif;
+
+								?>
+
+						
      
 	</div><!-- end product__customInfo -->
 
