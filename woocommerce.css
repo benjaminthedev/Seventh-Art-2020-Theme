@@ -41,7 +41,7 @@ p.woocommerce-result-count {
 ul.products{
     clear: both;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     width: 90vw;
     margin: 0 auto;
@@ -429,7 +429,7 @@ img.product__firstImage{
 
 /* -- Upsells Section -- */
 .woo__upsell {
-    padding: 10px 50px;
+    padding: 10px 120px;
 }
 section.up-sells.upsells.products {
     display: flex;
@@ -442,7 +442,7 @@ section.up-sells.upsells.products > ul.products.columns-4  {
 }
 section.up-sells.upsells.products > ul.products li{
     width: 8vw;
-    margin: 0px;
+    margin: 0px 10px;
     padding: 0px;
 }
 section.up-sells.upsells.products .woocommerce-loop-product__title {
@@ -634,15 +634,15 @@ section.related.products {
 .woocommerce-page ul.products {
     clear: both;
 }
-.woocommerce ul.products::after,
+/* .woocommerce ul.products::after,
 .woocommerce ul.products::before,
 .woocommerce-page ul.products::after,
 .woocommerce-page ul.products::before {
     content: " ";
     display: table;
-}
+} */
 
-.woocommerce ul.products li.last,
+/* .woocommerce ul.products li.last,
 .woocommerce-page ul.products li.last {
     margin-right: 0;
 }
@@ -650,7 +650,7 @@ section.related.products {
 .woocommerce-page ul.products.columns-1 li.product {
     width: 100%;
     margin-right: 0;
-}
+} */
 .woocommerce ul.products.columns-2 li.product,
 .woocommerce-page ul.products.columns-2 li.product {
     width: 48%;
