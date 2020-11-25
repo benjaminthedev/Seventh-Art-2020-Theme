@@ -25,7 +25,7 @@
 		<div class="footer__address">
 			<p>Seventh Art Productions, 63 Ship Street, Brighton, BN1 1AE, UK</p>
 			<p>Telephone: +44 (01273) 777 678</p>
-			<p>info@seventh-art.com</p>
+			<a href="mailto:info@seventh-art.com">info@seventh-art.com</a>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
