@@ -650,11 +650,14 @@ textarea {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	/* float: left; */
+	display: flex;
+	flex-direction: column;
 	position: absolute;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
+	padding: 20px;
 }
 
 .main-navigation ul ul ul {
@@ -667,6 +670,8 @@ textarea {
 	display: block;
 	left: auto;
 }
+
+
 
 .main-navigation ul ul a {
 	width: 200px;
@@ -965,7 +970,7 @@ header#masthead {
     position: absolute;
     z-index: 2;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 120px;
 }
 
@@ -993,6 +998,8 @@ ul#primary-menu li{
 	margin: 10px;
 }
 
+
+
 ul#primary-menu li a {
 	color: #fff;
 	text-transform: uppercase;
@@ -1003,6 +1010,24 @@ ul#primary-menu li a {
 
 
 ul#primary-menu li a:hover {
+	color:#C58E02;
+}
+
+/* sub menu */
+
+ul.sub-menu > li {
+    margin: 5px 10px !important;
+}
+
+ul.sub-menu{
+	background: rgba(255, 255, 255, 0.8);
+}
+
+ul#primary-menu li ul.sub-menu li a{
+	color:#000;
+}
+
+ul#primary-menu li ul.sub-menu li a:hover {
 	color:#C58E02;
 }
 

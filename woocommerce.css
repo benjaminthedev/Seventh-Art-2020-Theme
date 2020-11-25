@@ -429,7 +429,7 @@ img.product__firstImage{
 
 /* -- Upsells Section -- */
 .woo__upsell {
-    padding: 10px 50px;
+    padding: 10px 120px;
 }
 section.up-sells.upsells.products {
     display: flex;
@@ -442,7 +442,7 @@ section.up-sells.upsells.products > ul.products.columns-4  {
 }
 section.up-sells.upsells.products > ul.products li{
     width: 8vw;
-    margin: 0px;
+    margin: 0px 10px;
     padding: 0px;
 }
 section.up-sells.upsells.products .woocommerce-loop-product__title {
