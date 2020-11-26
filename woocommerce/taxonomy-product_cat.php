@@ -69,43 +69,18 @@ do_action( 'woocommerce_before_main_content' );
 		<?php endif; ?>
 	</div>	 
 
-	<style>
-		.para__textWrap h1{
-			/* color: #fff;
-			text-transform: uppercase;
-			font-size: 78px;
-			font-family: 'Teko', sans-serif;
-			font-weight: 100; */
 
-
-
-
-			color: #fff;
-    font-size: 100px;
-    font-family: 'Teko', sans-serif;
-    font-weight: 100;
-    align-self: center;
-    text-transform: uppercase;
-    line-height: 80px;
-    margin-top: 300px;
-    /* width: 60vw; */
-    text-align: center;
-    letter-spacing: -2px;
-
-
-		}
-	</style>
 
 
 	<div class="productCat__imageResponsive">
 		<?php if( $paraResponsive ): ?>
 			<div class="parallax_image_responsive"  style="background-image: url(<?php echo $paraResponsive; ?>);">
 		
-				<!-- <?php //if( $paraText ): ?>
+				<?php if( $paraText ): ?>
 					<div class="para__textWrap">
-						<p>this is where the text goes</p>
+						<h1><?php echo $paraText ?></h1>
 					</div>
-				<?php //endif; ?>	 -->
+				<?php endif; ?>	 
 
 				<?php if( $paraTextImg ): ?>
 					<div class="para__imageWrap">

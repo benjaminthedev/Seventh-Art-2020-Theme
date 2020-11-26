@@ -30,7 +30,7 @@ span.price {
 }
  .woocommerce ul.products li.product .last,
  .woocommerce-page ul.products li.product .last {
-    background: green !important;
+    /* background: green !important; */
 }
  ul.products .woocommerce-loop-product__title {
     padding: 0 !important;
@@ -127,7 +127,7 @@ span.price {
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     body {
-        background: green !important;
+        /* background: green !important; */
     }
     .woocommerce ul.products li.product,
     .woocommerce-page ul.products li.product {
