@@ -156,12 +156,25 @@ ul.woocommerce-info li a.button.wc-forward {
 .woocommerce-grouped-product-list-item__clickedNew {
 	visibility: hidden;
 	margin-right: 20px;
-	margin-top: 10px;
+	margin-top: 1px;
 }
 
 .woocommerce-grouped-product-list-item__clicked.showMe,
 .woocommerce-grouped-product-list-item__clickedNew.showMe {
 	visibility: visible;
+}
+
+.added__cart.show {
+    font-size: 15px;
+}
+
+.added__cartLink a {
+    font-size: 13px;
+    margin-left: -8px;
+}
+
+td.woo__grouped.woocommerce-grouped-product-list-item__clickedNew {
+    margin-top: 0px;
 }
 
 /*** COUPON BOX ***/

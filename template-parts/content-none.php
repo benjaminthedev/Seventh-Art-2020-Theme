@@ -34,7 +34,7 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'seventhart' ); ?></p>
+			<p><?php esc_html_e( 'Sorry no products were found matching your search. Please try again.', 'seventhart' ); ?></p>
 			<?php
 			get_search_form();
 
