@@ -144,8 +144,41 @@ const videoCloseBtn = document.querySelector('.youtube__close');
 		video.classList.remove('show__video');
 	});
 
+
+
+
+
+
+	console.log('Hi');
+
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+
+	   document.querySelectorAll('img').forEach(function(img){
+  	img.unknown = function(){this.style.display='none';};
+   })
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+   document.querySelectorAll('img').forEach(function(img){
+  	img.unknown = function(){this.style.display='none';};
+   })
+});
+
 </script>
 
+
+<style>
+img[src=""] {
+  display:none;
+}
+
+
+</style>
 <?php
 get_footer( 'shop' );
 

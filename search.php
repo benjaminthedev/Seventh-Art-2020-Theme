@@ -13,13 +13,18 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
+			
+			<h1>Search Results</h1>
+
 
 			<header class="page-header">
+			
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'seventhart' ), '<span>' . get_search_query() . '</span>' );
+					//printf( esc_html__( 'Search Results for: %s', 'seventhart' ), '<span>' . get_search_query() . '</span>' );
 					?>
+					Search Results
 				</h1>
 			</header><!-- .page-header -->
 

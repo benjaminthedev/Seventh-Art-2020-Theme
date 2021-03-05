@@ -259,3 +259,14 @@ function cw_remove_quantity_fields( $return, $product ) {
     return true;
 }
 add_filter( 'woocommerce_is_sold_individually', 'cw_remove_quantity_fields', 10, 2 );
+
+
+
+add_action( 'woocommerce_no_products_found', function(){
+    remove_action( 'woocommerce_no_products_found', 'wc_no_products_found', 10 );
+
+    // HERE change your message below
+    $message = __( 'Sorry no products were found matching your search. Please try again.', 'woocommerce' );
+
+    echo '<p class="woocommerce-info">' . $message .'</p>';
+}, 9 );

@@ -14,6 +14,10 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    
+<!-- Standard Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -23,6 +27,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141717600-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141717600-1');
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -63,6 +76,57 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-
 		</div><!-- end header__wrap -->
+
+		<div class="search__popUp">
+			<?php //echo do_shortcode('[woocommerce_product_search]'); ?>
+		</div>
+
+		<!-- Search Form -->
+		<div id="search__box" > 
+			<span class="close">X</span>
+			<div class="search__section">
+					<?php echo do_shortcode('[woocommerce_product_search]'); ?>
+			</div>
+			
+			<!-- <form role="search" id="searchform" action="/search" method="get">
+				<input value="" name="q" type="search" placeholder="type to search"/>
+			</form> -->
+		</div>
+
+
+
+
 	</header><!-- #masthead -->
+
+	<script>
+	console.log('Working?');
+
+	const searchClicked = document.querySelector('li.search');
+	const findDiv = document.getElementById('search__box');
+	const closeBtn = document.querySelector('.close');
+		  
+
+	searchClicked.addEventListener("click", function(){
+		findDiv.classList.add('open');
+	});
+	closeBtn.addEventListener("click", function(){
+		findDiv.classList.remove('open');
+	});
+
+
+
+// $(document).ready(function(){
+// 	console.log('ddd');
+// 	$('a[href="#search"]').on('click', function(event) {                    
+// 		$('#search').addClass('open');
+// 		$('#search > form > input[type="search"]').focus();
+// 	});            
+// 	$('#search, #search button.close').on('click keyup', function(event) {
+// 		if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+// 			$(this).removeClass('open');
+// 		}
+// 	});            
+// });
+
+	</script>
