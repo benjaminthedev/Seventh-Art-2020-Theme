@@ -107,8 +107,6 @@ function eachItem(item, index){
 			console.log('Mouse leave'); 
 			checkBox[index].checked = false;
 	}, false);
-	//console.log(item);
-	//console.log(index);
 }
 
 // Message when some has added to cart
@@ -132,7 +130,6 @@ const video = document.querySelector('.product__youtube');
 //Close Video Btn
 const videoCloseBtn = document.querySelector('.youtube__close');
 
-
 	//Opens The Video
 	videoTitleClicked.addEventListener('click', function(event){
 		console.log('Video Image Clicked');				
@@ -144,15 +141,6 @@ const videoCloseBtn = document.querySelector('.youtube__close');
 		video.classList.remove('show__video');
 	});
 
-
-
-
-
-
-	console.log('Hi');
-
-
-
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 
@@ -161,14 +149,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
    })
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
    document.querySelectorAll('img').forEach(function(img){
   	img.unknown = function(){this.style.display='none';};
-   })
-});
+   });
 
+   	//Country Restrictions!
+
+	// Does this page have a restriction?
+	const restricted = document.querySelectorAll('.restricted_country');
+	
+	// Is restricted by country?
+	if(restricted.length >= 1){
+		//Hide form
+		const formBlocked = document.querySelectorAll('.grouped_form');
+		formBlocked[0].style.display = "none";
+		//Hide Buying Guide
+		const guide = document.querySelectorAll('.woo__buyingGuide');
+		guide[0].style.display = "none";
+	}
+});
 </script>
 
 
@@ -176,6 +176,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 img[src=""] {
   display:none;
 }
+
+p.restricted_country {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: capitalize;
+    width: 80%;
+    background: #BF0000;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+label {font-weight: 700;}
+
+b, strong {
+    font-weight: 700;
+}
+
+
 
 
 </style>
