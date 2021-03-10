@@ -176,7 +176,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 img[src=""] {
   display:none;
 }
+   
 
+
+   
 p.restricted_country {
     font-size: 20px;
     font-weight: bold;
